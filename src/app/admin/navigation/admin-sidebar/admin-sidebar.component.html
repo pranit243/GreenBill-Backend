@@ -1,0 +1,30 @@
+<div class="bg-white border-end vh-100 p-3" style="width: 150px; position: fixed; overflow-y: auto;">
+    <h5 class="mb-4">Menu</h5>
+    <ul class="nav flex-column">
+      <hr />
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+      <hr />
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user" routerLinkActive="active">About</a>
+      </li>
+      <hr />
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#subMenu">Settings ▾</a>
+        <div class="collapse" id="subMenu">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/profile" routerLinkActive="active">Profile</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/security" routerLinkActive="active">Security</a>
+            </li>
+            <hr />
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
